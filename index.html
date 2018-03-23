@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Choco Bomb Recipe Book</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="top">
+    <!-- Top left-side content, providing info about signing up -->
+    <div id="top-side">
+        <h1 class="chocoTitle">Choco Bomb</h1>
+        <h3>A chance to win a FREE copy our outstanding Book ! </h3>
+        <p>
+            Here at Choco Bomb we want to offer the first 200 Sign Up's a copy of our amazing <b>FREE Book !</b> 
+        </p>
+        <p>
+            Not only does it contain our world-renowned recipe  <span class="chocoTxt"> Choco Bomb Cake</span> but it also covers a variety of cooking methods, insights and best Kitchen practices !
+        </p>
+        <p>
+            These Insights come from the top ten most famous chefs from around the world. Our book Will provide any aspiring cook with all the latest information on how to further their cooking abilities in the kitchen.
+        </p>
+    </div>
+    <!-- Sign up Form -->
+    <div id="top-right">
+        <div class="form-container">
+            <div class="form-header">
+                <i class="fas fa-book"></i>
+                <h4>
+                <b>Sign-up now </b>for a chance to win a <b>FREE</b> copy our amazing book !
+                
+                </h4>
+            </div>
+            <div class="form-fields">
+                <!-- This form tag would also contain a method and action if it were to submit actual data for Choco Bomb  -->
+                <form>
+                    <div class="row">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="firstname" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <label for="lname">Second Name:</label>
+                        <input type="text" id="sname" name="secondname" required>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <br>
+                    <input type="checkbox" name="gdpr" value="GDPR Consent" id="gdpr"> 
+                    <em>
+                        * Choco Bomb require consent to store 'Personal Data' and occasionally send you information by email, if you consent, please check the box. 
+                        <span id="readmore">Read More about GDPR</span>
+                    </em>
+                    <br>
+                    <div class="row">
+                        <input type="submit" value="Sign Up" id="signupSubmit">
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="middle">
+    <h1 class="chocoAltTitle">The Choco Bomb</h1>
+    <br>
+    <p>
+        The most <span class="chocoTxt"> Yummy Scrumptious Luscious recipe </span>  you will ever taste ! 
+        <i class="far fa-heart"></i>
+    </p>
+    <br>
+    <img src="images/chocobombcake.jpg" alt="choc bomb cake">
+    <br>
+    <br>
+    <p>Looks tasty? Well ...</p>
+    <p>
+        <span class="chocoTxt"> The Choco Bomb</span> 
+        book is this year's must read recipe cook book ! If you want a chance to learn how to make this mouth-watering recipe, Sign up now! 
+    </p>
+    <a href="#top">
+        <button id="btn">Sign up Now !</button>
+    </a>
+</div>
+<footer>
+    <span>© 2018 Choco Bomb</span>
+    <span class="footerInfo">Terms</span>
+    <span class="footerInfo">Privacy</span>
+</footer>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>GDPR Compliant Sign-Up Consent for Choco Bomb</h2>
+        <ul>
+            <li>
+                We require your 'Email Address' ('Personal Data') for the 'Purpose' of 'Storing' your email address and later 'Sending' you occasional emails informing you about product promotions, related downloads, special events and online broadcasts relating to the Choco Bomb range of products.
+            </li>
+            <li>
+                We will store your email address in secure storage for as long as we have your legal consent to do so and occasionally send you information via the email address you have provide on this form.
+            </li>
+            <li>
+                You must be the rightful user of the email address provided and be aged 16 years or more to give legal consent/
+            </li>
+        </ul>
+        <h3>At Any Time You Can</h3>
+        <ul>
+            <li>
+                'Remove Your Email Address From Choco Bomb Systems' (Your 'Right To Be Forgotten')
+                </li>
+            <li>
+                'Amend Your Email Address In Choco Bomb Systems' (Your 'Right To Data Accuracy')
+            </li>
+        </ul>
+        <p>
+            And don't worry, we do not sell, rent or share your email address with 3rd parties in compliance with our 'Privacy Policy'.
+        </p>
+        <br>
+    </div>
+</div>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+</body>
+</html>

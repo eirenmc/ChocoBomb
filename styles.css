@@ -1,0 +1,492 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+    background-color:transparent;
+}
+
+#top{
+    z-index:1;
+    width:100%;
+    overflow:auto;
+    background-image: url("images/background06.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    margin:auto;
+    box-shadow: 2px 2px 15px #545452;
+}
+
+#top-side{
+    width:50%;
+    float:left;
+}
+
+#top-side > *{
+    margin: 2% auto;
+    padding-left:8%;
+    width:90%;
+    text-align: justify;
+}
+
+#top-side > .chocoTitle{
+    font-family: 'Lobster', cursive;
+    color:#9C6E3E;
+    margin-top:15%;
+    margin-bottom:8% !important;
+    font-size:50pt;
+    text-shadow: 2px 2px 4px #D6D5D2;
+}
+
+.chocoAltTitle{
+    font-family: 'Lobster', cursive;
+    color:white;
+    font-size:50pt;
+}
+
+#top-right{
+    width:50%;  
+    float:left;
+}
+
+.chocoTxt{
+    font-family: 'Lobster', cursive;
+    color:#9C6E3E;
+    font-size:20pt;
+}
+
+b{
+    font-size:16pt;
+}
+
+em{
+    width:90%;
+    float:right;
+    font-size:10pt;
+    padding-bottom:8%;
+}
+
+#middle{
+    width:100%;
+    padding:4% 0%;
+    background-color:#5DEDE6;
+    float:left;
+    color:white;
+    font-size:13pt;
+}
+
+#middle > img{
+    width:50%;
+    margin:2% 25% !important;
+}
+
+#middle > h1, #middle > p{
+    margin:auto;
+    width:50%;
+    padding:0% 0% 2% 0%;
+    align-content: center;
+    text-align: center;
+}
+
+#btn{
+    background-color: #9C6E3E;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 15%;
+    margin: 3% 0% 2% 45%;
+    font-size:14pt;
+}
+
+#readmore{
+    color:blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer{
+    background-color:#1D2D36;
+    color:white;
+    padding:2% 0%;
+}
+
+footer > span{
+    margin-left: 2%;
+    margin-top:1% !important;
+    cursor: pointer;
+}
+
+.form-container{ 
+    width:50%;
+    margin:25px auto;
+    padding-bottom:5%;    
+}
+
+.form-fields {
+    position: relative;
+    width: 100%;
+    background-color:#F9F8F4;
+    padding:9% 10% 2% 10%;
+    z-index: 1;
+    overflow:auto;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.form-header > .fa-book{
+    float:left;
+    font-size:30pt;
+    padding:2%;
+    margin-top:6%;
+    margin-right:3%;
+    margin-bottom: 5%;
+}
+  
+.form-header { 	
+    background-color:#9C6E3E;
+    /* background-color: #1D2D36; */
+    position: relative;
+    width: 100%;
+    color:white;
+    padding:2% 10%;
+    z-index: 2;
+}
+  
+.form-header:after {
+    border-right: solid 30px transparent;
+    border-left: solid 30px transparent;
+    border-top: solid 30px #9C6E3E;
+    transform: translateX(-30%);
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 48%;
+    height: 0;
+    width: 0;
+}
+
+.form-fields > * {
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=email]{
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=text]:focus, input[type=email]:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #5DEDE6;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+    margin-top: 0;
+    font-size:14pt;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(78, 214, 207);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 3;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*  --- Media Queries --- */
+@media screen and (max-width: 1100px) {
+    .form-header > .fa-book{
+        padding:2%;
+        margin-top:8%;
+        margin-right:4%;
+        margin-bottom: 12%;
+    } 
+}
+
+@media screen and (max-width: 1000px) {
+    .form-header > .fa-book{
+        margin-top:10%;
+    } 
+}
+
+@media screen and (max-width: 880px) {
+    .form-header > .fa-book{
+        margin-top:12%;
+        margin-bottom: 20%;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .form-header > .fa-book{
+        padding:2%;
+        margin-top:14%;
+        margin-right:4%;
+        margin-bottom: 30%;
+    } 
+
+    #middle > img{
+        width:80%;
+        margin:2% 10% !important;
+    }
+
+    #middle > h1, #middle > p{
+        width:80%;
+    }
+
+    #btn{
+        width:60%;
+        margin-left:20%;
+    }
+
+    #top-side > .chocoTitle{
+        margin-top:8%;
+        margin-bottom:5% !important;
+        font-size:45pt;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .form-header > .fa-book{
+        padding:2%;
+        margin-top:0%;
+        margin-right:0%;
+        margin-bottom: 1%;
+    } 
+    
+    #top-side, #top-right {
+        width: 100%;
+    }
+
+    #top-side{   
+        padding-left:0% !important;
+        margin: auto;
+    }
+
+    #top-side > p, #top-side > h3{
+        padding:0% !important;
+        margin-left:5%;
+        padding-bottom:2%;
+    }
+
+    #top-side > .chocoTitle{
+        margin-top:8%;
+        margin-left:-3%;
+        margin-bottom:5% !important;
+        font-size:50pt;
+    }
+
+    .chocoAltTitle{
+        font-size:40pt;
+    }
+
+    #middle > img{
+        width:80%;
+        margin:2% 10% !important;
+    }
+
+    #middle > h1, #middle > p{
+        width:80%;
+    }
+
+    #btn{
+        width:50%;
+        margin-left:25%;
+        margin: 3% 0% 2% 2 8%;
+    }
+
+    #top-right{
+        width:100%;
+    }
+
+    .form-container{
+        width: 100%;
+        padding:0%;
+        margin:0%;
+        margin-top:15%;
+    }
+
+    .form-fields > * {
+        margin-left:15%;
+    }
+
+    .form-header{
+        padding: 2% 0%;
+    }
+
+    .form-header > *{
+        margin-left:10%;
+    }
+
+    .form-fields> input, .form-fields > label{
+        margin-left:10%;
+    }
+
+    .form-fields{
+        width:100%;
+        padding-right:0%;
+        padding-left:0%;
+    }
+
+    label{
+        width:90%;
+    }
+    
+    input[type=text], input[type=email]{
+        width: 80%;
+    }
+
+    input[type=checkbox]{
+        float:left;
+    }
+
+    em{
+        width:70%;
+        float:left;
+        margin-left:2%;
+    }
+
+    input[type=submit] { 
+        padding: 10px 0px 10px 0px;   
+        float: left;
+        width: 80%;
+        margin-top: 0;
+        font-size:14pt;
+    } 
+}
+
+@media screen and (max-width: 690px) {
+    #middle > a > #btn{
+        margin:  3% 0% 2% 2 54% !important;
+    }
+
+    .form-header > *{
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .form-header > .fa-book{
+        margin-top:2%;
+    } 
+}
+
+@media screen and (max-width: 460px) {
+    .form-header > .fa-book{
+        margin-top:3%;
+    } 
+
+    .chocoAltTitle{
+        font-size:35pt;
+    }
+
+    .chocoTxt{
+        font-family: 'Lobster', cursive;
+        color:#9C6E3E;
+        font-size:18pt;
+    }
+
+    #top-side{
+        padding:3%;
+        margin-bottom:10%;
+    }
+
+    #top-side > *{
+        margin: 2% auto;
+        padding-left:7%;
+        width:90%;
+    }
+
+    .chocoTitle{
+        margin-top:1%;
+    }
+    
+    #top-side{
+        padding:0px;
+    }
+
+    #top-side > p{
+        margin-bottom:4%;
+        margin-top:6%;
+    }
+
+    .form-container{
+        margin-top:10%;
+    }
+
+
+}
+
+@media screen and (max-width: 380px) {
+    footer > .footerInfo{
+        display:none;
+    }
+
+    #top-side > .chocoTitle{
+        font-size:35pt;
+    }
+
+    .form-container{
+        margin-top:8%;
+    }
+
+    .form-header > .fa-book{
+        margin-top:6%;
+    } 
+}
